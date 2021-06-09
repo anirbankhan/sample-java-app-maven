@@ -7,8 +7,10 @@ pipeline {
         }
         stages {
             stage('Demo') {
+                steps {
                 echo "Hello World!"
                 sayHello "Anirban"
+                }
             }
             stage('Build') {
                 steps {
