@@ -17,7 +17,7 @@ pipeline {
             stage('Build') {
                 agent any
                 steps {
-                    shell 'mvn -Dmaven.test.failure.ignore=true install'    
+                    sh 'mvn -Dmaven.test.failure.ignore=true install'    
                 }
         }
     }
