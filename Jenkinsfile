@@ -10,6 +10,7 @@ pipeline {
                 steps {
                 echo "Hello World!"
                 sayHello "Anirban"
+                evenOrAdd(2)
                 }
             }
             
