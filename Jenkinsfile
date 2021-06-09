@@ -10,10 +10,7 @@ pipeline {
                 steps {
                 echo "Hello World!"
                 sayHello "Anirban"
-                script {
-                def nexus_url=evenOrAdd(2)
-                echo $nexus_url
-                }
+                evenOrAdd(currentBuild.number)
                 }
             }
             
