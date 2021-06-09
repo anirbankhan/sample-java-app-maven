@@ -10,7 +10,8 @@ pipeline {
                 steps {
                 echo "Hello World!"
                 sayHello "Anirban"
-                evenOrAdd(2)
+                nexus_url=evenOrAdd(2)
+                echo $nexus_url
                 }
             }
             
