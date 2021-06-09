@@ -10,8 +10,10 @@ pipeline {
                 steps {
                 echo "Hello World!"
                 sayHello "Anirban"
+                evenOrAdd 2
                 }
             }
+            
             stage('Build') {
                 steps {
                 sh 'mvn -Dmaven.test.failure.ignore=true install'
