@@ -11,7 +11,7 @@ pipeline {
                 echo "Hello World!"
                 sayHello "Anirban"
                 script {
-                nexus_url=evenOrAdd(2)
+                def nexus_url=evenOrAdd(2)
                 echo $nexus_url
                 }
                 }
