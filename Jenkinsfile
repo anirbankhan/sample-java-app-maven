@@ -1,4 +1,4 @@
-@Library('my-shared-library')
+@Library('my-shared-library') _
 pipeline {
     agent any
         tools {
@@ -10,7 +10,6 @@ pipeline {
                 steps {
                 echo "Hello World!"
                 sayHello "Anirban"
-                evenOrAdd 2
                 }
             }
             
